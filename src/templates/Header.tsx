@@ -36,7 +36,7 @@ export function Header() {
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="contact-us">
             <a>Contact us</a>
           </Link>
         </li>
