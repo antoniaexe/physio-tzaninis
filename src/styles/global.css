@@ -46,3 +46,10 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.heroimage {
+  @apply hidden lg:block blur-sm absolute right-0 w-1/2;
+  height: 927px;
+  background-image: url(/assets/images/physiotzaninis.jpg);
+}
+
