@@ -1,4 +1,7 @@
+import { Button } from '@material-tailwind/react';
+
 import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
+import { BackPainIcon } from '../images/BackpainIcon';
 import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
@@ -6,6 +9,16 @@ const VerticalFeatures = () => (
     title="Your title here"
     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
   >
+    <div className="flex-col ">
+      <div>
+        <Button color="white">
+          <BackPainIcon />
+        </Button>
+      </div>
+    </div>
+    <div>
+      <span>Backpain</span>
+    </div>
     <VerticalFeatureRow
       title="Your title here"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
@@ -22,7 +35,7 @@ const VerticalFeatures = () => (
     <VerticalFeatureRow
       title="Your title here"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature3.svg"
+      image="/assets/images</div>/feature3.svg"
       imageAlt="Third feature alt text"
     />
   </Section>
