@@ -56,3 +56,27 @@
   background-image: url(/assets/images/physiotzaninis.jpg);
 }
 
+.iconlist{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.iconsymbol{
+  margin-bottom: 0.94rem;
+    background-color: #e1e1e1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    height: 5.94rem;
+    width: 5.94rem;
+    transition: .4s all;
+}
+.icon{
+  padding: 0 0.63rem;
+  margin: 0.63rem 0;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(0 0 0);
+
+}
