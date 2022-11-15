@@ -49,11 +49,11 @@
 .dropdown:hover .dropbtn {background-color:;}
 
 .heroimage {
-  @apply hidden lg:block blur-sm absolute w-full bg-center;
+  @apply hidden lg:block blur-[2px] absolute w-full bg-center;
   height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/assets/images/physiotzaninis.jpg);
+  background-image: url(/assets/images/physiotzaninis3.jpg);
 }
 
 .iconlist{
