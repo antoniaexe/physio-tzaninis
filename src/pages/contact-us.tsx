@@ -19,7 +19,8 @@ const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 const ContactUs = () => {
   return (
     <Base>
-      <Section yPadding="pt-20 pb-32">
+      <Section yPadding="pt-20 pb-32 mt-20">
+        <h1 className="text-2xl mb-20">Επικοινωνήστε μαζί μας</h1>
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col gap-9">
             <div className="flex w-full items-end gap-4">
