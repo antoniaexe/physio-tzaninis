@@ -36,8 +36,18 @@ export function Header() {
           </Link>
         </li>
         <li>
-          <Link href="contact-us">
+          <Link href="/contact-us">
             <a>Contact us</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/appointments">
+            <a>Κλειστε ραντεβού</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog">
+            <a>Τα νέα μας</a>
           </Link>
         </li>
       </NavbarTwoColumns>
