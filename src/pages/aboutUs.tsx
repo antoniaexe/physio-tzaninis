@@ -1,3 +1,5 @@
+import { Breadcrumbs } from '@material-tailwind/react';
+
 import { Background } from '../background/Background';
 import { Section } from '../layout/Section';
 import { Base } from '../templates/Base';
@@ -5,8 +7,14 @@ import { Base } from '../templates/Base';
 const AboutUs = () => {
   return (
     <Base>
-      <Background color="bg-gray-100">
-        <Section yPadding="pt-20 pb-32">
+      <Section yPadding="pt-20 pb-32">
+        <Breadcrumbs className="mb-20">
+          <a href="" className="opacity-60">
+            Αρχική
+          </a>
+          <a href="">About us</a>
+        </Breadcrumbs>
+        <Background color="bg-gray-100">
           <p className="text-2xl mb-5">
             At Kaizen Physical Therapy, we have a highly experienced team of
             Seattle, WA physical therapists who offer specialized treatment
@@ -23,8 +31,8 @@ const AboutUs = () => {
             NE #201 making it a commonly frequented spot for physical therapy
             Seattle, WA pain relief.
           </p>
-        </Section>
-      </Background>
+        </Background>
+      </Section>
     </Base>
   );
 };
