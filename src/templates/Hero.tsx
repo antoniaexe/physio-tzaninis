@@ -23,9 +23,16 @@ const Hero = () => (
                   Washington.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <Button variant="filled" color="blue" size="lg" ripple>
-                    ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
-                  </Button>
+                  <a href="/appointments">
+                    <Button
+                      className="bg-indigo-600"
+                      color="blue"
+                      size="lg"
+                      ripple
+                    >
+                      ΚΛΕΙΣΤΕ ΡΑΝΤΕΒΟΥ
+                    </Button>
+                  </a>
                 </div>
               </div>
             </main>
