@@ -51,9 +51,9 @@
 .heroimage {
   @apply hidden lg:block blur-[2px] absolute w-full bg-center;
   height: 100%;
-  background-size: contain;
+  background-size: fill;
   background-repeat: no-repeat;
-  background-image: url(/assets/images/physiotzaninis3.jpg);
+  background-image: url(/assets/images/physiotzaninis2.jpg);
 }
 
 .iconlist{

@@ -36,7 +36,7 @@ const ContactUs = () => {
   return (
     <Base>
       <Section yPadding="pt-20 pb-32 mt-20">
-        <h1 className="text-2xl mb-20 text-indigo-600">
+        <h1 className="text-2xl mb-20 text-indigo-600 font-bold">
           Επικοινωνήστε μαζί μας
         </h1>
         <form onSubmit={handleSubmit}>
@@ -61,7 +61,7 @@ const ContactUs = () => {
               <Popover>
                 <PopoverHandler>
                   <Button className="bg-indigo-600" type="submit">
-                    Αποστολή
+                    Αποστολη
                   </Button>
                 </PopoverHandler>
                 <PopoverContent>Επιτυχής αποστολή</PopoverContent>
