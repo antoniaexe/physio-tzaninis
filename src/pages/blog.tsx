@@ -2,7 +2,6 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Typography,
 } from '@material-tailwind/react';
 import Link from 'next/link';
@@ -14,12 +13,15 @@ const Blog = () => {
   return (
     <Base>
       <Section yPadding="pt-20 pb-32 mt-20 space-y-10">
-        <Card className="w-100">
-          <CardHeader color="blue" className="relative h-56">
+        <h1 className="text-2xl mb-20 text-indigo-600 font-bold text-center">
+          Τα νέα μας!
+        </h1>
+        <Card className="w-100 flex-row">
+          <CardHeader className="relative h-56">
             <img
-              src="/img/blog.jpg"
+              src="/assets/images/physiotzaninis2.jpg"
               alt="img-blur-shadow"
-              className="h-full w-full"
+              className="object-cover"
             />
           </CardHeader>
           <CardBody className="text-left">
@@ -32,23 +34,13 @@ const Blog = () => {
               life in Barcelona...
             </Typography>
           </CardBody>
-          <CardFooter
-            divider
-            className="flex items-center justify-between py-3"
-          >
-            <Typography variant="small">$899/night</Typography>
-            <Typography variant="small" color="gray" className="flex gap-1">
-              <i className="fas fa-map-marker-alt fa-sm mt-[3px]" />
-              Barcelona, Spain
-            </Typography>
-          </CardFooter>
         </Card>
-        <Card className="w-100">
-          <CardHeader color="blue" className="relative h-56">
+        <Card className="w-100 flex-row">
+          <CardHeader className="relative h-56">
             <img
-              src="/img/blog.jpg"
+              src="/assets/images/physiotzaninis.jpg"
               alt="img-blur-shadow"
-              className="h-full w-full"
+              className="object-cover"
             />
           </CardHeader>
           <CardBody className="text-left">
@@ -58,26 +50,16 @@ const Blog = () => {
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
               walk and near to "Naviglio" where you can enjoy the main night
-              life in Barcelona.
+              life in Barcelona...
             </Typography>
           </CardBody>
-          <CardFooter
-            divider
-            className="flex items-center justify-between py-3"
-          >
-            <Typography variant="small">$899/night</Typography>
-            <Typography variant="small" color="gray" className="flex gap-1">
-              <i className="fas fa-map-marker-alt fa-sm mt-[3px]" />
-              Barcelona, Spain
-            </Typography>
-          </CardFooter>
         </Card>
-        <Card className="w-100">
-          <CardHeader color="blue" className="relative h-56">
+        <Card className="w-100 flex-row">
+          <CardHeader className="relative h-56">
             <img
-              src="/img/blog.jpg"
+              src="/assets/images/physiotzaninis3.jpg"
               alt="img-blur-shadow"
-              className="h-full w-full"
+              className="object-cover"
             />
           </CardHeader>
           <CardBody className="text-left">
@@ -87,26 +69,16 @@ const Blog = () => {
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
               walk and near to "Naviglio" where you can enjoy the main night
-              life in Barcelona.
+              life in Barcelona...
             </Typography>
           </CardBody>
-          <CardFooter
-            divider
-            className="flex items-center justify-between py-3"
-          >
-            <Typography variant="small">$899/night</Typography>
-            <Typography variant="small" color="gray" className="flex gap-1">
-              <i className="fas fa-map-marker-alt fa-sm mt-[3px]" />
-              Barcelona, Spain
-            </Typography>
-          </CardFooter>
         </Card>
-        <Card className="w-100">
-          <CardHeader color="blue" className="relative h-56">
+        <Card className="w-100 flex-row">
+          <CardHeader className="relative h-56">
             <img
-              src="/img/blog.jpg"
+              src="/assets/images/physiotzaninis2.jpg"
               alt="img-blur-shadow"
-              className="h-full w-full"
+              className="object-cover"
             />
           </CardHeader>
           <CardBody className="text-left">
@@ -116,19 +88,9 @@ const Blog = () => {
             <Typography>
               The place is close to Barceloneta Beach and bus stop just 2 min by
               walk and near to "Naviglio" where you can enjoy the main night
-              life in Barcelona.
+              life in Barcelona...
             </Typography>
           </CardBody>
-          <CardFooter
-            divider
-            className="flex items-center justify-between py-3"
-          >
-            <Typography variant="small">$899/night</Typography>
-            <Typography variant="small" color="gray" className="flex gap-1">
-              <i className="fas fa-map-marker-alt fa-sm mt-[3px]" />
-              Barcelona, Spain
-            </Typography>
-          </CardFooter>
         </Card>
       </Section>
     </Base>
