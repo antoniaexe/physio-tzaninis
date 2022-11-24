@@ -21,17 +21,17 @@ const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
   // @ts-ignore
   const email = e.target.elements.email.value;
   // @ts-ignore
-  const date = e.target.elements.date.value;
+  const preferredDate = e.target.elements.preferredDate.value;
   // @ts-ignore
   const comments = e.target.elements.comments.value;
-  console.log(fullname, email, date, comments);
-  createRequestAppointment({ fullname, email, date, comments });
+  console.log(fullname, email, preferredDate, comments);
+  createRequestAppointment({ fullname, email, preferredDate, comments });
   // @ts-ignore
   e.target.elements.fullname.value = '';
   // @ts-ignore
   e.target.elements.email.value = '';
   // @ts-ignore
-  e.target.elements.date.value = '';
+  e.target.elements.preferredDate.value = '';
   // @ts-ignore
   e.target.elements.comments.value = '';
 };
@@ -40,7 +40,9 @@ const Appointments: any = () => {
   return (
     <Base>
       <Section yPadding="pt-20 pb-32 mt-20">
-        <h1 className="text-2xl mb-20">Κλείστε ραντεβού</h1>
+        <h1 className="text-2xl mb-20 text-indigo-600 font-bold">
+          Κλείστε ραντεβού
+        </h1>
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col gap-9">
             <div className="flex w-full items-end gap-4">
@@ -58,7 +60,8 @@ const Appointments: any = () => {
               <Input
                 variant="static"
                 label="Ημερομηνία και ώρα"
-                name="date"
+                name="preferredDate"
+                type="datetime-local"
               ></Input>
             </div>
             <div>
@@ -67,8 +70,8 @@ const Appointments: any = () => {
             <div>
               <Popover>
                 <PopoverHandler>
-                  <Button variant="gradient" type="submit">
-                    Αποστολή
+                  <Button className="bg-indigo-600" type="submit">
+                    Αποστολη
                   </Button>
                 </PopoverHandler>
                 <PopoverContent>Επιτυχής αποστολή</PopoverContent>
