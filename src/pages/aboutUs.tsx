@@ -7,15 +7,15 @@ import { Base } from '../templates/Base';
 const AboutUs = () => {
   return (
     <Base>
-      <Section yPadding="pt-20 pb-32">
+      <Section yPadding="pt-20 pb-32 ">
         <Breadcrumbs className="mb-20">
           <a href="" className="opacity-60">
             Αρχική
           </a>
           <a href="">About us</a>
         </Breadcrumbs>
-        <Background color="bg-gray-100">
-          <p className="text-2xl mb-5">
+        <Background>
+          <p className="text-2xl mb-5 p-5 shadow-lg">
             At Kaizen Physical Therapy, we have a highly experienced team of
             Seattle, WA physical therapists who offer specialized treatment
             services for any pain, injury, or discomfort you may be feeling. Our
