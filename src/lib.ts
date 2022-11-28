@@ -42,3 +42,32 @@ export const createRequestAppointment = ({
     .then((entry) => console.log(entry))
     .catch(console.error);
 };
+export const getBlogPosts = () => {
+  return client
+    .getSpace('yr79rkau45jt')
+    .then((space) => space.getEnvironment('master'))
+    .then((environment) =>
+      environment.getEntries({ content_type: 'blogPost' })
+    );
+};
+export const waitFor = (delay, text) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (text === '') {
+        reject('no text');
+      } else {
+        resolve(text);
+      }
+    }, delay * 1000);
+  });
+};
+
+// const text = waitFor(2, "bob")
+
+waitFor(2, 'Bob')
+  .then((text) => {
+    console.log(text);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
