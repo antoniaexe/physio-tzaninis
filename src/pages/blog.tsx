@@ -12,7 +12,14 @@ import { Section } from '../layout/Section';
 import { getBlogPosts } from '../lib';
 import { Base } from '../templates/Base';
 
-const Post = ({ title, image, mainContent, author, publishedDate }) => {
+const Post = ({
+  title,
+  image,
+  mainContent,
+  author,
+  publishedDate,
+  ...props
+}) => {
   return (
     <Card className="w-100 flex-row">
       <CardHeader className="relative h-56">
@@ -29,6 +36,7 @@ const Post = ({ title, image, mainContent, author, publishedDate }) => {
         <h6>
           {author}-{publishedDate}
         </h6>
+        <PostMetadata {...props} />
         <Typography>{mainContent}</Typography>
       </CardBody>
     </Card>
@@ -55,6 +63,8 @@ const Blog = () => {
               mainContent={post.fields.mainContent['en-US']}
               author={post.fields.author['en-US']}
               publishedDate={post.fields.publishedDate['en-US']}
+              authorMetadata={'super writer'}
+              postMetadata={'something else'}
               key={index}
             ></Post>
           );
